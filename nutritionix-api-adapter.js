@@ -17,7 +17,7 @@ function getItemData(searchTerm, callback) {
 
 function getNutritionData(element, callback) {
 	$.ajax({
-    url: `https://api.nutritionix.com/v1_1/item?id=${element.dataset.itemId}&appId=67be8dd5&appKey=2ccded816bad80964973fe15d5b43332`,
+    url: `https://api.nutritionix.com/v1_1/item?id=${element.dataset.itemId}&appId=${apiId}&appKey=${apiKey}`,
     type: 'get',
     success: function(data) {
       console.log(data);
